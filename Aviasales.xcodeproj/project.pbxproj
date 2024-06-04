@@ -11,6 +11,18 @@
 		186347DF2C0F14F600120149 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186347DE2C0F14F600120149 /* ContentView.swift */; };
 		186347E12C0F14F700120149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186347E02C0F14F700120149 /* Assets.xcassets */; };
 		186347E42C0F14F700120149 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186347E32C0F14F700120149 /* Preview Assets.xcassets */; };
+		186347EE2C0F16C800120149 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 186347EB2C0F16C800120149 /* SF-Pro-Display-Semibold.otf */; };
+		186347EF2C0F16C800120149 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 186347EC2C0F16C800120149 /* SF-Pro-Display-Medium.otf */; };
+		186347F02C0F16C800120149 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 186347ED2C0F16C800120149 /* SF-Pro-Display-Regular.otf */; };
+		186347F62C0F183000120149 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186347F52C0F183000120149 /* Font+Extension.swift */; };
+		186347FB2C0F196100120149 /* TicketsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186347FA2C0F196100120149 /* TicketsTabView.swift */; };
+		186347FD2C0F19A700120149 /* HotelsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186347FC2C0F19A700120149 /* HotelsTabView.swift */; };
+		186347FF2C0F19D400120149 /* KorocheTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186347FE2C0F19D400120149 /* KorocheTabView.swift */; };
+		186348012C0F19DF00120149 /* SubscriptionsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186348002C0F19DF00120149 /* SubscriptionsTabView.swift */; };
+		186348032C0F19E800120149 /* ProfileTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186348022C0F19E800120149 /* ProfileTabView.swift */; };
+		186348052C0F213A00120149 /* SearchInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186348042C0F213A00120149 /* SearchInputView.swift */; };
+		186348072C0F252C00120149 /* MusicianCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186348062C0F252C00120149 /* MusicianCardView.swift */; };
+		186348092C0F282B00120149 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186348082C0F282B00120149 /* Int+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +31,19 @@
 		186347DE2C0F14F600120149 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		186347E02C0F14F700120149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		186347E32C0F14F700120149 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		186347EB2C0F16C800120149 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		186347EC2C0F16C800120149 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		186347ED2C0F16C800120149 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		186347F22C0F16FC00120149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		186347F52C0F183000120149 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		186347FA2C0F196100120149 /* TicketsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsTabView.swift; sourceTree = "<group>"; };
+		186347FC2C0F19A700120149 /* HotelsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsTabView.swift; sourceTree = "<group>"; };
+		186347FE2C0F19D400120149 /* KorocheTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KorocheTabView.swift; sourceTree = "<group>"; };
+		186348002C0F19DF00120149 /* SubscriptionsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsTabView.swift; sourceTree = "<group>"; };
+		186348022C0F19E800120149 /* ProfileTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabView.swift; sourceTree = "<group>"; };
+		186348042C0F213A00120149 /* SearchInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInputView.swift; sourceTree = "<group>"; };
+		186348062C0F252C00120149 /* MusicianCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicianCardView.swift; sourceTree = "<group>"; };
+		186348082C0F282B00120149 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +76,12 @@
 		186347DB2C0F14F600120149 /* Aviasales */ = {
 			isa = PBXGroup;
 			children = (
-				186347DC2C0F14F600120149 /* AviasalesApp.swift */,
+				186347F42C0F182300120149 /* Extensions */,
+				186347F12C0F16D600120149 /* Resources */,
+				186347F72C0F194900120149 /* Views */,
 				186347DE2C0F14F600120149 /* ContentView.swift */,
-				186347E02C0F14F700120149 /* Assets.xcassets */,
-				186347E22C0F14F700120149 /* Preview Content */,
+				186347DC2C0F14F600120149 /* AviasalesApp.swift */,
+				186347F22C0F16FC00120149 /* Info.plist */,
 			);
 			path = Aviasales;
 			sourceTree = "<group>";
@@ -65,6 +92,49 @@
 				186347E32C0F14F700120149 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		186347EA2C0F16B400120149 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				186347EC2C0F16C800120149 /* SF-Pro-Display-Medium.otf */,
+				186347ED2C0F16C800120149 /* SF-Pro-Display-Regular.otf */,
+				186347EB2C0F16C800120149 /* SF-Pro-Display-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		186347F12C0F16D600120149 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				186347E22C0F14F700120149 /* Preview Content */,
+				186347EA2C0F16B400120149 /* Fonts */,
+				186347E02C0F14F700120149 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		186347F42C0F182300120149 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				186347F52C0F183000120149 /* Font+Extension.swift */,
+				186348082C0F282B00120149 /* Int+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		186347F72C0F194900120149 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				186347FA2C0F196100120149 /* TicketsTabView.swift */,
+				186347FC2C0F19A700120149 /* HotelsTabView.swift */,
+				186347FE2C0F19D400120149 /* KorocheTabView.swift */,
+				186348002C0F19DF00120149 /* SubscriptionsTabView.swift */,
+				186348022C0F19E800120149 /* ProfileTabView.swift */,
+				186348042C0F213A00120149 /* SearchInputView.swift */,
+				186348062C0F252C00120149 /* MusicianCardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +195,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186347EF2C0F16C800120149 /* SF-Pro-Display-Medium.otf in Resources */,
+				186347EE2C0F16C800120149 /* SF-Pro-Display-Semibold.otf in Resources */,
 				186347E42C0F14F700120149 /* Preview Assets.xcassets in Resources */,
+				186347F02C0F16C800120149 /* SF-Pro-Display-Regular.otf in Resources */,
 				186347E12C0F14F700120149 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +210,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186347FF2C0F19D400120149 /* KorocheTabView.swift in Sources */,
+				186347FD2C0F19A700120149 /* HotelsTabView.swift in Sources */,
+				186348032C0F19E800120149 /* ProfileTabView.swift in Sources */,
+				186348072C0F252C00120149 /* MusicianCardView.swift in Sources */,
+				186347FB2C0F196100120149 /* TicketsTabView.swift in Sources */,
+				186348092C0F282B00120149 /* Int+Extension.swift in Sources */,
+				186347F62C0F183000120149 /* Font+Extension.swift in Sources */,
+				186348052C0F213A00120149 /* SearchInputView.swift in Sources */,
 				186347DF2C0F14F600120149 /* ContentView.swift in Sources */,
+				186348012C0F19DF00120149 /* SubscriptionsTabView.swift in Sources */,
 				186347DD2C0F14F600120149 /* AviasalesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,9 +353,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Aviasales/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Aviasales/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Aviasales/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,9 +382,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Aviasales/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Aviasales/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Aviasales/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
