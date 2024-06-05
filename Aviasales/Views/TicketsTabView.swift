@@ -6,10 +6,20 @@
 //
 
 import SwiftUI
+import BottomSheet
 
 struct TicketsTabView: View {
+    @ObservedObject var viewModel: TicketsTabViewModel = TicketsTabViewModel()
+    
     @State var from: String = "Минск"
     @State var destination: String = ""
+    
+    @State var isSearchPresented: Bool = true
+    @State var bottomSheetPosition: BottomSheetPosition = .hidden
+    
+    func showSearchBottomSheet() {
+        bottomSheetPosition = .relative(1)
+    }
     
     var body: some View {
         GeometryReader { geometry in
@@ -28,7 +38,7 @@ struct TicketsTabView: View {
                                 .padding(.leading, 8)
                             
                             VStack(spacing: 8) {
-                                SearchInputView(value: $from, placeholder: "Откуда - Минск")
+                                SearchInputView(value: $from, action: showSearchBottomSheet, placeholder: "Откуда - Минск")
                                 
                                 Divider()
                                     .background(Color.searchDivider)
@@ -57,24 +67,9 @@ struct TicketsTabView: View {
                     
                     ScrollView(.horizontal) {
                         HStack(spacing: 24) {
-                            MusicianCardView(
-                                id: 1,
-                                artistName: "Die Antwoord",
-                                destination: "Будапешт",
-                                price: 5000
-                            )
-                            MusicianCardView(
-                                id: 2,
-                                artistName: "Socrat&Lera",
-                                destination: "Санкт-Петербург",
-                                price: 1999
-                            )
-                            MusicianCardView(
-                                id: 3,
-                                artistName: "Лампабикт",
-                                destination: "Москва",
-                                price: 2390
-                            )
+                            ForEach(viewModel.artistFlights, id: \.id) { artistFlight in
+                                MusicianCardView(artistFlight: artistFlight)
+                            }
                         }
                     }
                     .contentMargins(.horizontal, 16)
@@ -84,6 +79,20 @@ struct TicketsTabView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             .background(Color.appBackground)
         }
+        .onAppear {
+            viewModel.fetchArtistFlights()
+        }
+        .bottomSheet(bottomSheetPosition: $bottomSheetPosition, switchablePositions: [.relative(0), .relative(1)]) {
+            SearchSheetView()
+        }
+        .enableBackgroundBlur(false)
+        .enableSwipeToDismiss(true)
+        .dragIndicatorColor(.searchSheetDrag)
+        .showCloseButton()
+        .onDismiss {
+            bottomSheetPosition = .hidden
+        }
+        .background(Color.searchSheetBackground)
     }
 }
 

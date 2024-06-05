@@ -8,29 +8,26 @@
 import SwiftUI
 
 struct MusicianCardView: View {
-    let id: Int
-    let artistName: String
-    let destination: String
-    let price: Int
+    let artistFlight: ArtistFlight
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Image("artist_\(id)")
+            Image("artist_\(artistFlight.id)")
                 .resizable()
                 .scaledToFill()
                 .frame(width: 132, height: 132)
                 .clipShape(RoundedRectangle(cornerRadius: 16))
     
-            Text(artistName)
+            Text(artistFlight.title)
                 .foregroundStyle(Color.white)
                 .font(.SFProDisplay(ofSize: 16, weight: .semiBold))
             VStack(alignment: .leading, spacing: 4) {
-                Text(destination)
+                Text(artistFlight.town)
                     .foregroundStyle(Color.white)
                     .font(.SFProDisplay(ofSize: 14))
                 HStack(alignment: .center) {
                     Image(.plane)
-                    Text("от \(price.getFormattedCurrency()) ₽ ")
+                    Text("от \(artistFlight.price.value.getFormattedCurrency()) ₽ ")
                         .foregroundStyle(Color.white)
                         .font(.SFProDisplay(ofSize: 14))
                 }
@@ -41,8 +38,6 @@ struct MusicianCardView: View {
 }
 
 #Preview(traits: .sizeThatFitsLayout) {
-    MusicianCardView(
-        id: 1, artistName: "Die Antwoord", destination: "Будапешт", price: 22664
-    )
+    MusicianCardView(artistFlight: ArtistFlight(id: 1, title: "Die Antwoord", town: "Будапешт", price: .init(value: 22664)))
         .background(Color.appBackground)
 }

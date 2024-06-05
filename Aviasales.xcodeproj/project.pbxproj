@@ -24,6 +24,14 @@
 		186348072C0F252C00120149 /* MusicianCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186348062C0F252C00120149 /* MusicianCardView.swift */; };
 		186348092C0F282B00120149 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186348082C0F282B00120149 /* Int+Extension.swift */; };
 		1863480B2C104F1E00120149 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863480A2C104F1E00120149 /* TabBarItem.swift */; };
+		1863480E2C1063AA00120149 /* ArtistFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863480D2C1063AA00120149 /* ArtistFlight.swift */; };
+		186348112C10641400120149 /* ArtistFlightsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186348102C10641400120149 /* ArtistFlightsService.swift */; };
+		186348132C1064E100120149 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186348122C1064E100120149 /* APIClient.swift */; };
+		186348162C1066AD00120149 /* TicketsTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186348152C1066AD00120149 /* TicketsTabViewModel.swift */; };
+		186348182C106BCE00120149 /* SearchSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186348172C106BCE00120149 /* SearchSheetView.swift */; };
+		1863481B2C106D2E00120149 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 1863481A2C106D2E00120149 /* BottomSheet */; };
+		1863481D2C10775B00120149 /* FastActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863481C2C10775B00120149 /* FastActionsView.swift */; };
+		1863481F2C10795F00120149 /* DestinationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863481E2C10795F00120149 /* DestinationsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +54,13 @@
 		186348062C0F252C00120149 /* MusicianCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicianCardView.swift; sourceTree = "<group>"; };
 		186348082C0F282B00120149 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		1863480A2C104F1E00120149 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		1863480D2C1063AA00120149 /* ArtistFlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistFlight.swift; sourceTree = "<group>"; };
+		186348102C10641400120149 /* ArtistFlightsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistFlightsService.swift; sourceTree = "<group>"; };
+		186348122C1064E100120149 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		186348152C1066AD00120149 /* TicketsTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsTabViewModel.swift; sourceTree = "<group>"; };
+		186348172C106BCE00120149 /* SearchSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSheetView.swift; sourceTree = "<group>"; };
+		1863481C2C10775B00120149 /* FastActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastActionsView.swift; sourceTree = "<group>"; };
+		1863481E2C10795F00120149 /* DestinationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1863481B2C106D2E00120149 /* BottomSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,8 +94,11 @@
 		186347DB2C0F14F600120149 /* Aviasales */ = {
 			isa = PBXGroup;
 			children = (
+				1863480F2C10640100120149 /* Services */,
+				1863480C2C10639500120149 /* Models */,
 				186347F42C0F182300120149 /* Extensions */,
 				186347F12C0F16D600120149 /* Resources */,
+				186348142C10669A00120149 /* ViewModels */,
 				186347F72C0F194900120149 /* Views */,
 				186347DE2C0F14F600120149 /* ContentView.swift */,
 				186347DC2C0F14F600120149 /* AviasalesApp.swift */,
@@ -136,8 +155,36 @@
 				186348042C0F213A00120149 /* SearchInputView.swift */,
 				186348062C0F252C00120149 /* MusicianCardView.swift */,
 				1863480A2C104F1E00120149 /* TabBarItem.swift */,
+				186348172C106BCE00120149 /* SearchSheetView.swift */,
+				1863481C2C10775B00120149 /* FastActionsView.swift */,
+				1863481E2C10795F00120149 /* DestinationsListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		1863480C2C10639500120149 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1863480D2C1063AA00120149 /* ArtistFlight.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1863480F2C10640100120149 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				186348102C10641400120149 /* ArtistFlightsService.swift */,
+				186348122C1064E100120149 /* APIClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		186348142C10669A00120149 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				186348152C1066AD00120149 /* TicketsTabViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +203,9 @@
 			dependencies = (
 			);
 			name = Aviasales;
+			packageProductDependencies = (
+				1863481A2C106D2E00120149 /* BottomSheet */,
+			);
 			productName = Aviasales;
 			productReference = 186347D92C0F14F600120149 /* Aviasales.app */;
 			productType = "com.apple.product-type.application";
@@ -184,6 +234,9 @@
 				Base,
 			);
 			mainGroup = 186347D02C0F14F600120149;
+			packageReferences = (
+				186348192C106D2E00120149 /* XCRemoteSwiftPackageReference "BottomSheet" */,
+			);
 			productRefGroup = 186347DA2C0F14F600120149 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -213,17 +266,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1863481D2C10775B00120149 /* FastActionsView.swift in Sources */,
+				186348112C10641400120149 /* ArtistFlightsService.swift in Sources */,
 				186347FF2C0F19D400120149 /* KorocheTabView.swift in Sources */,
+				186348182C106BCE00120149 /* SearchSheetView.swift in Sources */,
 				186347FD2C0F19A700120149 /* HotelsTabView.swift in Sources */,
 				186348032C0F19E800120149 /* ProfileTabView.swift in Sources */,
+				1863481F2C10795F00120149 /* DestinationsListView.swift in Sources */,
 				186348072C0F252C00120149 /* MusicianCardView.swift in Sources */,
 				186347FB2C0F196100120149 /* TicketsTabView.swift in Sources */,
 				186348092C0F282B00120149 /* Int+Extension.swift in Sources */,
 				186347F62C0F183000120149 /* Font+Extension.swift in Sources */,
+				186348132C1064E100120149 /* APIClient.swift in Sources */,
 				1863480B2C104F1E00120149 /* TabBarItem.swift in Sources */,
 				186348052C0F213A00120149 /* SearchInputView.swift in Sources */,
 				186347DF2C0F14F600120149 /* ContentView.swift in Sources */,
+				1863480E2C1063AA00120149 /* ArtistFlight.swift in Sources */,
 				186348012C0F19DF00120149 /* SubscriptionsTabView.swift in Sources */,
+				186348162C1066AD00120149 /* TicketsTabViewModel.swift in Sources */,
 				186347DD2C0F14F600120149 /* AviasalesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +490,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		186348192C106D2E00120149 /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lucaszischka/BottomSheet";
+			requirement = {
+				kind = exactVersion;
+				version = 3.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1863481A2C106D2E00120149 /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 186348192C106D2E00120149 /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 186347D12C0F14F600120149 /* Project object */;
 }

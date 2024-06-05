@@ -10,11 +10,13 @@ import SwiftUI
 struct SearchInputView: View {
     @Binding var value: String
     
+    var action: (() -> Void)?
+    
     var placeholder: String
     
     var body: some View {
         Button(action: {
-            print("open search")
+            action?()
         }, label: {
             Text(value.isEmpty ? placeholder : value)
                 .foregroundStyle(value.isEmpty ? Color.searchPlaceholder : Color.searchText)
