@@ -10,10 +10,10 @@ import SwiftUI
 @main
 struct AviasalesApp: App {
     init() {
-        setupTabBarAppearence()
+        setupTabBarAppearance()
     }
     
-    func setupTabBarAppearence() {
+    func setupTabBarAppearance() {
         UITabBar.appearance().unselectedItemTintColor = UIColor.tabItem
     }
     

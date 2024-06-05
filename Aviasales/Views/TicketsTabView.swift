@@ -13,47 +13,47 @@ struct TicketsTabView: View {
     
     var body: some View {
         GeometryReader { geometry in
-            VStack(spacing: 0) {
-                Text("Поиск дешевых\nавиабилетов")
-                    .foregroundStyle(Color.screenTitle)
-                    .font(.SFProDisplay(ofSize: 22, weight: .semiBold))
-                    .multilineTextAlignment(.center)
-                    .lineLimit(2)
-                    .padding(.bottom, 38)
-                    .padding(.top, 26)
-                
-                VStack {
-                    HStack {
-                        Image(.search)
-                            .padding(.leading, 8)
+            VStack(spacing: 32) {
+                VStack(spacing: 38) {
+                    Text("Поиск дешевых\nавиабилетов")
+                        .foregroundStyle(Color.screenTitle)
+                        .font(.SFProDisplay(ofSize: 22, weight: .semiBold))
+                        .multilineTextAlignment(.center)
+                        .lineLimit(.max)
                         
-                        VStack {
-                            SearchInputView(value: $from, placeholder: "Откуда - Минск")
+                    
+                    VStack {
+                        HStack(spacing: 0) {
+                            Image(.search)
+                                .padding(.leading, 8)
                             
-                            Divider()
-                                .background(Color.searchDivider)
-                            
-                            SearchInputView(value: $destination, placeholder: "Куда - Турция")
+                            VStack(spacing: 8) {
+                                SearchInputView(value: $from, placeholder: "Откуда - Минск")
+                                
+                                Divider()
+                                    .background(Color.searchDivider)
+                                
+                                SearchInputView(value: $destination, placeholder: "Куда - Турция")
+                            }
+                            .padding(16)
                         }
+                        .background(Color.gray4)
+                        .clipShape(RoundedRectangle(cornerRadius: 16))
                         .padding(16)
                     }
-                    .background(Color.gray4)
+                    .frame(maxWidth: .infinity)
+                    .background(Color.searchAreaBackground)
                     .clipShape(RoundedRectangle(cornerRadius: 16))
-                    .padding(16)
                 }
-                .frame(
-                    width: geometry.size.width - 16
-                )
-                .background(Color.searchAreaBackground)
-                .clipShape(RoundedRectangle(cornerRadius: 16))
+                .padding(.top, 26)
+                .padding(.horizontal, 16)
                 
-                VStack {
+                VStack(spacing: 26) {
                     Text("Музыкально отлететь")
                         .foregroundStyle(Color.white)
                         .font(.SFProDisplay(ofSize: 22, weight: .semiBold))
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.bottom, 32)
-                        .padding(.top, 26)
+                        .padding(.horizontal, 16)
                     
                     ScrollView(.horizontal) {
                         HStack(spacing: 24) {
@@ -77,12 +77,11 @@ struct TicketsTabView: View {
                             )
                         }
                     }
+                    .contentMargins(.horizontal, 16)
                 }
-                .frame(width: geometry.size.width - 16)
-                
-                Spacer()
+                .frame(maxWidth: .infinity)
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             .background(Color.appBackground)
         }
     }

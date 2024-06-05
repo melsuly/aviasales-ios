@@ -12,30 +12,23 @@ struct ContentView: View {
         TabView {
             TicketsTabView()
                 .tabItem {
-                    Label("Авиабилеты", image: .tickets)
-                        .font(.SFProDisplay(ofSize: 10))
-                        
+                    TabBarItem(title: "Авиабилеты", icon: .tickets)
                 }
             HotelsTabView()
                 .tabItem {
-                    Label("Отели", image: .hotels)
-                        .font(.SFProDisplay(ofSize: 10))
-                        .tint(Color.tabItemActive)
+                    TabBarItem(title: "Отели", icon: .hotels)
                 }
             KorocheTabView()
                 .tabItem {
-                    Label("Короче", image: .koroche)
-                        .font(.SFProDisplay(ofSize: 10))
+                    TabBarItem(title: "Короче", icon: .koroche)
                 }
             SubscriptionsTabView()
                 .tabItem {
-                    Label("Подписки", image: .subscriptions)
-                        .font(.SFProDisplay(ofSize: 10))
+                    TabBarItem(title: "Подписки", icon: .subscriptions)
                 }
             ProfileTabView()
                 .tabItem {
-                    Label("Профиль", image: .profile)
-                        .font(.SFProDisplay(ofSize: 10))
+                    TabBarItem(title: "Профиль", icon: .profile)
                 }
         }
         .tint(Color.tabItemActive)
